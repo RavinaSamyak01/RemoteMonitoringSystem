@@ -37,7 +37,6 @@ import org.testng.annotations.BeforeTest;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseInit {
@@ -61,7 +60,7 @@ public class BaseInit {
 
 			storage = new Properties();
 			FileInputStream fi = new FileInputStream(
-					".\\src\\main\\resources\\samyak_PropertiesData\\ObjectStorage.properties");
+					".\\src\\main\\resources\\rms_PropertiesData\\ObjectStorage.properties");
 			storage.load(fi);
 			logs.info("initialization of the properties file is done");
 
@@ -107,7 +106,7 @@ public class BaseInit {
 
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions options1 = new ChromeOptions();
-				options1.addArguments("--incognito");
+				// options1.addArguments("--incognito");
 				options1.addArguments("--test-type");
 				options1.addArguments("--disable-extensions");
 				options1.addArguments("window-size=1920,1080");
@@ -120,53 +119,92 @@ public class BaseInit {
 				System.out.println("Browser is not defined");
 			}
 
+			// Maximize the browser
+			driver.manage().window().maximize();
+			logs.info("Browser maximized");
+			System.out.println("Browser maximized");
+
 			// define timeout
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			logs.info("timeout is defined");
+			System.out.println("timeout is defined");
 
 			// delete the cookies
 			driver.manage().deleteAllCookies();
 			logs.info("Cookies are deleted");
+			System.out.println("Cookies are deleted");
 
-			// Object of the ExcelFileReader Class
-			/*
-			 * data = new ExcelFileReader();
-			 * logs.info("initialization of the excelfilereader Class is done");
-			 */
 		}
 
 	}
 
 	@BeforeTest
-	public void login() throws InterruptedException {
-		storage.getProperty("url");
+	public void login() throws InterruptedException, IOException {
+		driver.get(storage.getProperty("url"));
 		waitForPageLoad();
+		Actions act = new Actions(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 5000);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@formcontrolname=\"email\"]")));
-		highLight(isElementPresent("Email_xpath"), driver);
-		isElementPresent("Email_xpath").sendKeys("Superadmin");
-		highLight(isElementPresent("Next_xpath"), driver);
-		isElementPresent("Next_xpath").click();
-		highLight(isElementPresent("Password_xpath"), driver);
-		isElementPresent("Password_xpath").sendKeys("Welcome@1234");
-		highLight(isElementPresent("subbmit_xpath"), driver);
-		isElementPresent("subbmit_xpath").click();
+		// ---wait for login div
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("NavLoginUserId")));
+
+		// ---Login details
+		highLight(isElementPresent("UserName_id"), driver);
+		isElementPresent("UserName_id").sendKeys("kshah@samyak.com");
+		highLight(isElementPresent("Password_id"), driver);
+		isElementPresent("Password_id").sendKeys("Kssipl45@");
+		highLight(isElementPresent("Login_id"), driver);
+		isElementPresent("Login_id").click();
+		System.out.println("Login done");
 		logs.info("Login done");
 		waitForPageLoad();
+		Thread.sleep(5000);
+		getScreenshot("HomePage", "Login", driver);
+
+		// ---Get logedIn User details
+		wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//*[@class=\"userloginimg userloginimg2 cursor-pointer moveleft user-role\"]")));
+		WebElement LogoutDiv = isElementPresent("LogoutDiv_xpath");
+		highLight(LogoutDiv, driver);
+		act.moveToElement(LogoutDiv).build().perform();
+		System.out.println("Mouse hover on LogoutDiv");
+		logs.info("Mouse hover on LogoutDiv");
+		getScreenshot("LogOutDiv_", "Login", driver);
+
+		// ---Get UserName shortcut
+		System.out.println("Displayed Username is==" + isElementPresent("LogoutDiv_xpath").getText());
+		logs.info("Displayed Username is==" + isElementPresent("LogoutDiv_xpath").getText());
+		getScreenshot("LogOutDiv_", "Login", driver);
+
+		// ---Get Welcome UserName
+		System.out.println("Displayed Username is==" + isElementPresent("WelcmUser_xpath").getText());
+		logs.info("Displayed Username is==" + isElementPresent("WelcmUser_xpath").getText());
+		getScreenshot("LogOutDiv_", "Login", driver);
 
 	}
 
 	@AfterTest
-	public void logOut() throws InterruptedException {
+	public void logOut() throws InterruptedException, IOException {
+		Actions act = new Actions(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 5000);
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class=\"client-img\"]")));
-		highLight(isElementPresent("logOut_xpath"), driver);
-		isElementPresent("logOut_xpath").click();
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//dx-button[@aria-label=\"Logout\"]")));
-		highLight(isElementPresent("logOutbtn_xpath"), driver);
-		isElementPresent("logOutbtn_xpath").click();
-		Thread.sleep(2000);
+		// -----Mouse over on Logout Div
+		wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//*[@class=\"userloginimg userloginimg2 cursor-pointer moveleft user-role\"]")));
+		WebElement LogoutDiv = isElementPresent("LogoutDiv_xpath");
+		highLight(LogoutDiv, driver);
+		act.moveToElement(LogoutDiv).build().perform();
+		System.out.println("Mouse hover on LogoutDiv");
+		logs.info("Mouse hover on LogoutDiv");
+		getScreenshot("LogOutDiv_", "LogOut", driver);
 
+		// ---Clicked on logout button
+		wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//*[@class=\"common-fontwel12 text-underline cursor-pointer\"]")));
+		highLight(isElementPresent("Logout_xpath"), driver);
+		isElementPresent("Logout_xpath").click();
+		System.out.println("Clicked on LogOut button");
+		logs.info("Clicked on LogOut button");
+		Thread.sleep(2000);
+		getScreenshot("LoginPageAfterLogOut_", "LogOut", driver);
 	}
 
 	@AfterSuite
@@ -204,7 +242,7 @@ public class BaseInit {
 	}
 
 	public static void startTest() {
-		report = new ExtentReports("./ExtentReport/ExtentReportResults.html", true);
+		report = new ExtentReports("./ExtentReport/ExtentReportResults.html", false);
 		// test = report.startTest();
 	}
 
@@ -321,21 +359,6 @@ public class BaseInit {
 
 	}
 
-	public void wait(String parameter) {
-		WebDriverWait wait = new WebDriverWait(driver, 5000);
-		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(parameter)));
-	}
-
-	public void action(WebElement parameter) {
-		Actions act = new Actions(driver);
-		act.moveToElement(parameter).click().perform();
-	}
-
-	public void javaScrExec(WebElement parameter) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();", parameter);
-	}
-
 	public void getScreenshot(String imagename, String MName, WebDriver driver) throws IOException {
 
 		try {
@@ -346,8 +369,20 @@ public class BaseInit {
 
 			String logFileName = new SimpleDateFormat("yyyyMMddHHmm").format(new Date());
 
-			if (MName.equals("Airport")) {
-				FileUtils.copyFile(scrFile, new File("./src/main/resources/screenshots/Airport/" + imagename
+			if (MName.equals("Login")) {
+				FileUtils.copyFile(scrFile, new File("./src/main/resources/screenshots/Login/" + imagename + logFileName
+						+ System.currentTimeMillis() + ".png"));
+
+			} else if (MName.equals("LogOut")) {
+				FileUtils.copyFile(scrFile, new File("./src/main/resources/screenshots/LogOut/" + imagename
+						+ logFileName + System.currentTimeMillis() + ".png"));
+
+			} else if (MName.equals("DashBoard")) {
+				FileUtils.copyFile(scrFile, new File("./src/main/resources/screenshots/Dashoard/" + imagename
+						+ logFileName + System.currentTimeMillis() + ".png"));
+
+			}else if (MName.equals("CompanyMaster")) {
+				FileUtils.copyFile(scrFile, new File("./src/main/resources/screenshots/CompanyMaster/" + imagename
 						+ logFileName + System.currentTimeMillis() + ".png"));
 
 			} else {
@@ -364,11 +399,6 @@ public class BaseInit {
 			System.out.println("Exception while taking screenshot " + e.getMessage());
 			logs.info("Exception while taking screenshot " + e.getMessage());
 		}
-
-		/*
-		 * @DataProvider public Object[][] gettestData() { return
-		 * MyLibrary.getTestData(data, "Contact"); }
-		 */
 
 	}
 }

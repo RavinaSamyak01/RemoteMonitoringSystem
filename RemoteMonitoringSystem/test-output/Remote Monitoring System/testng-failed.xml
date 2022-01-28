@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Remote Monitoring System]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DashBoard(failed)">
+    <classes>
+      <class name="rms_Dashboard.DashBoard">
+        <methods>
+          <include name="logOut"/>
+          <include name="testMethodName"/>
+          <include name="getResult"/>
+          <include name="dashboard"/>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- rms_Dashboard.DashBoard -->
+    </classes>
+  </test> <!-- DashBoard(failed) -->
+</suite> <!-- Failed suite [Remote Monitoring System] -->

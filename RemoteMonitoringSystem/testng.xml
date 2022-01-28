@@ -2,15 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Remote Monitoring System">
 
-	<test thread-count="5" name="Airport">
+	<test thread-count="5" name="DashBoard">
 		<classes>
-			<class name="admin.Airport" />
-		</classes>
-	</test>
-
-	<test thread-count="5" name="AirportGroup">
-		<classes>
-			<class name="admin.AirportGroup" />
+			<class name="rms_Dashboard.DashBoard" />
 		</classes>
 	</test>
 

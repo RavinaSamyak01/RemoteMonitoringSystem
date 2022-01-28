@@ -1,0 +1,25 @@
+27/01/2022 13:44:55 devpinoyLogger initialization of the log is done
+27/01/2022 13:44:55 devpinoyLogger initialization of the properties file
+27/01/2022 13:44:55 devpinoyLogger initialization of the properties file is done
+27/01/2022 13:44:55 devpinoyLogger Launching the browser
+27/01/2022 13:44:58 devpinoyLogger Chrome Browser is launched
+27/01/2022 13:44:58 devpinoyLogger Browser maximized
+27/01/2022 13:44:58 devpinoyLogger timeout is defined
+27/01/2022 13:44:58 devpinoyLogger Cookies are deleted
+27/01/2022 13:45:10 devpinoyLogger Login done
+27/01/2022 13:45:15 devpinoyLogger Printing screen shot taken for className HomePage2022012713451643271315529
+27/01/2022 13:45:16 devpinoyLogger Mouse hover on LogoutDiv
+27/01/2022 13:45:17 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022012713451643271317025
+27/01/2022 13:45:17 devpinoyLogger Displayed Username is==KS
+27/01/2022 13:45:17 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022012713451643271317296
+27/01/2022 13:45:17 devpinoyLogger Displayed Username is==Krupa Shah
+27/01/2022 13:45:17 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022012713451643271317597
+27/01/2022 13:45:17 devpinoyLogger -----Testing CompanyMaster-------
+27/01/2022 13:45:23 devpinoyLogger Clicked on Admin menu
+27/01/2022 13:45:25 devpinoyLogger Clicked on Company Master
+27/01/2022 13:45:26 devpinoyLogger Printing screen shot taken for className CompanyMasterScreen_2022012713451643271326098
+27/01/2022 13:45:37 devpinoyLogger Mouse hover on LogoutDiv
+27/01/2022 13:45:37 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022012713451643271337934
+27/01/2022 13:45:39 devpinoyLogger Clicked on LogOut button
+27/01/2022 13:45:41 devpinoyLogger Printing screen shot taken for className LoginPageAfterLogOut_2022012713451643271341432
+27/01/2022 13:45:46 devpinoyLogger Browser closed
