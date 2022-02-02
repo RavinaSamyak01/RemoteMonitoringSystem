@@ -1,67 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-27T12:56:15 IST" name="Default suite" finished-at="2022-01-27T14:04:36 IST" duration-ms="4100615">
+  <suite started-at="2022-02-02T14:29:30 IST" name="Default suite" finished-at="2022-02-02T14:31:00 IST" duration-ms="90200">
     <groups>
     </groups>
-    <test started-at="2022-01-27T12:56:15 IST" name="Default test" finished-at="2022-01-27T14:04:36 IST" duration-ms="4100615">
-      <class name="rms_Admin.CompanyMaster">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:rms_Admin.CompanyMaster@6253c26]" started-at="2022-01-27T12:56:13 IST" name="startUp" finished-at="2022-01-27T12:56:15 IST" duration-ms="2088" status="PASS">
+    <test started-at="2022-02-02T14:29:30 IST" name="Default test" finished-at="2022-02-02T14:31:00 IST" duration-ms="90200">
+      <class name="rms_Admin.DynamicTest">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:rms_Admin.DynamicTest@23c30a20]" started-at="2022-02-02T14:29:26 IST" name="startUp" finished-at="2022-02-02T14:29:30 IST" duration-ms="4433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method is-config="true" signature="login()[pri:0, instance:rms_Admin.CompanyMaster@6253c26]" started-at="2022-01-27T12:56:15 IST" name="login" finished-at="2022-01-27T12:56:34 IST" duration-ms="18776" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:rms_Admin.CompanyMaster@6253c26]" started-at="2022-01-27T12:56:34 IST" name="testMethodName" finished-at="2022-01-27T12:56:34 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void rms_Admin.CompanyMaster.companyMaster() throws java.lang.InterruptedException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodName -->
-        <test-method signature="companyMaster()[pri:0, instance:rms_Admin.CompanyMaster@6253c26]" started-at="2022-01-27T12:56:34 IST" name="companyMaster" finished-at="2022-01-27T12:56:52 IST" duration-ms="18443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- companyMaster -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:rms_Admin.CompanyMaster@6253c26]" started-at="2022-01-27T12:56:52 IST" name="getResult" finished-at="2022-01-27T12:56:52 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=companyMaster status=SUCCESS method=CompanyMaster.companyMaster()[pri:0, instance:rms_Admin.CompanyMaster@6253c26] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:rms_Admin.CompanyMaster@6253c26]" started-at="2022-01-27T12:56:52 IST" name="logOut" finished-at="2022-01-27T14:04:36 IST" duration-ms="4063331" status="FAIL">
+        <test-method is-config="true" signature="login()[pri:0, instance:rms_Admin.DynamicTest@23c30a20]" started-at="2022-02-02T14:29:30 IST" name="login" finished-at="2022-02-02T14:31:00 IST" duration-ms="90110" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[chrome not reachable
   (Session info: chrome=94.0.4606.54)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SIPL92', ip: '192.168.113.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+System info: host: 'SIPL92', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.54, chrome: {chromedriverVersion: 94.0.4606.113 (9d935b6bb55e..., userDataDir: C:\Users\RPRAJA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c9ee3ebc503e1ff10f1e3adc001ed161
-*** Element info: {Using=xpath, value=//*[@class="common-fontwel12 text-underline cursor-pointer"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.54, chrome: {chromedriverVersion: 94.0.4606.113 (9d935b6bb55e..., userDataDir: C:\Users\RPRAJA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55614}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 09840f8c795a175e9195578265a521b2
+*** Element info: {Using=xpath, value=//*[@class="userloginimg userloginimg2 cursor-pointer moveleft user-role"]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=94.0.4606.54)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SIPL92', ip: '192.168.113.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+System info: host: 'SIPL92', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.54, chrome: {chromedriverVersion: 94.0.4606.113 (9d935b6bb55e..., userDataDir: C:\Users\RPRAJA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c9ee3ebc503e1ff10f1e3adc001ed161
-*** Element info: {Using=xpath, value=//*[@class="common-fontwel12 text-underline cursor-pointer"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.54, chrome: {chromedriverVersion: 94.0.4606.113 (9d935b6bb55e..., userDataDir: C:\Users\RPRAJA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55614}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 09840f8c795a175e9195578265a521b2
+*** Element info: {Using=xpath, value=//*[@class="userloginimg userloginimg2 cursor-pointer moveleft user-role"]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -82,7 +52,7 @@ at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.
 at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
 at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at rms_BasePackage.BaseInit.logOut(BaseInit.java:200)
+at rms_BasePackage.BaseInit.login(BaseInit.java:170)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,8 +62,8 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(Met
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.afterRun(TestRunner.java:877)
-at org.testng.TestRunner.run(TestRunner.java:599)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
@@ -112,12 +82,96 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:rms_Admin.DynamicTest@23c30a20]" started-at="2022-02-02T14:31:00 IST" name="testMethodName" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643792460897" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodName -->
+        <test-method signature="dynamicTest()[pri:0, instance:rms_Admin.DynamicTest@23c30a20]" started-at="2022-02-02T14:31:00 IST" name="dynamicTest" finished-at="2022-02-02T14:31:00 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=94.0.4606.54)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIPL92', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.54, chrome: {chromedriverVersion: 94.0.4606.113 (9d935b6bb55e..., userDataDir: C:\Users\RPRAJA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55614}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 09840f8c795a175e9195578265a521b2
+*** Element info: {Using=xpath, value=//*[@class="userloginimg userloginimg2 cursor-pointer moveleft user-role"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=94.0.4606.54)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIPL92', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.54, chrome: {chromedriverVersion: 94.0.4606.113 (9d935b6bb55e..., userDataDir: C:\Users\RPRAJA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55614}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 09840f8c795a175e9195578265a521b2
+*** Element info: {Using=xpath, value=//*[@class="userloginimg userloginimg2 cursor-pointer moveleft user-role"]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at rms_BasePackage.BaseInit.login(BaseInit.java:170)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:rms_Admin.DynamicTest@23c30a20]" started-at="2022-02-02T14:31:00 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643792460909" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:rms_Admin.DynamicTest@23c30a20]" started-at="2022-02-02T14:31:00 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643792460915" status="SKIP">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:rms_Admin.CompanyMaster@6253c26]" started-at="2022-01-27T14:04:36 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643272476139" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:rms_Admin.DynamicTest@23c30a20]" started-at="2022-02-02T14:31:00 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643792460991" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- rms_Admin.CompanyMaster -->
+      </class> <!-- rms_Admin.DynamicTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

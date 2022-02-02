@@ -38,6 +38,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import rms_Utility.ExcelFileReader;
 
 public class BaseInit {
 
@@ -46,6 +47,7 @@ public class BaseInit {
 	public static Logger logs;
 	public static ExtentTest test;
 	public static ExtentReports report;
+	public static ExcelFileReader data;
 
 	@BeforeSuite
 	public void startUp() throws Exception {
@@ -133,6 +135,10 @@ public class BaseInit {
 			driver.manage().deleteAllCookies();
 			logs.info("Cookies are deleted");
 			System.out.println("Cookies are deleted");
+			
+			//--Define File for ExcelFileReader 
+			data= new ExcelFileReader(System.getProperty("user.dir")+"\\src\\main\\resources\\rms_TestData\\TestData.xls");
+			logs.info("ExcelFileReader Object created");
 
 		}
 
@@ -149,9 +155,9 @@ public class BaseInit {
 
 		// ---Login details
 		highLight(isElementPresent("UserName_id"), driver);
-		isElementPresent("UserName_id").sendKeys("kshah@samyak.com");
+		isElementPresent("UserName_id").sendKeys("Ravina.prajapati@samyak.com");
 		highLight(isElementPresent("Password_id"), driver);
-		isElementPresent("Password_id").sendKeys("Kssipl45@");
+		isElementPresent("Password_id").sendKeys("Ravina@123");
 		highLight(isElementPresent("Login_id"), driver);
 		isElementPresent("Login_id").click();
 		System.out.println("Login done");
