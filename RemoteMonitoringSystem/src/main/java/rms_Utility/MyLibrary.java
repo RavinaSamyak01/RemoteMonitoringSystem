@@ -10,7 +10,7 @@ public class MyLibrary extends BaseInit {
 	 * "Login"); }
 	 */
 
-	public Object[][] getTestData(ExcelFileReader data, String sheetName) {
+	public static Object[][] getTestData(ExcelFileReader data, String sheetName) {
 
 		data = new ExcelFileReader(
 				System.getProperty("user.dir") + "\\src\\main\\resources\\rms_TestData\\TestData.xlsx");
@@ -24,7 +24,7 @@ public class MyLibrary extends BaseInit {
 
 			for (int col = 0; col < cols; col++) {
 
-				myData[row - 1][col] = data.getData(sheetName, row, col);
+				myData[row - 1][col] = ExcelFileReader.getData(sheetName, row, col);
 			}
 		}
 

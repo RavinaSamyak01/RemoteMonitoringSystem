@@ -137,7 +137,7 @@ public class BaseInit {
 			System.out.println("Cookies are deleted");
 			
 			//--Define File for ExcelFileReader 
-			data= new ExcelFileReader(System.getProperty("user.dir")+"\\src\\main\\resources\\rms_TestData\\TestData.xls");
+			data= new ExcelFileReader(System.getProperty("user.dir")+"\\src\\main\\resources\\rms_TestData\\TestData.xlsx");
 			logs.info("ExcelFileReader Object created");
 
 		}
@@ -179,11 +179,13 @@ public class BaseInit {
 		// ---Get UserName shortcut
 		System.out.println("Displayed Username is==" + isElementPresent("LogoutDiv_xpath").getText());
 		logs.info("Displayed Username is==" + isElementPresent("LogoutDiv_xpath").getText());
+		data.setData("Login", 1, 2, isElementPresent("LogoutDiv_xpath").getText());
 		getScreenshot("LogOutDiv_", "Login", driver);
 
 		// ---Get Welcome UserName
 		System.out.println("Displayed Username is==" + isElementPresent("WelcmUser_xpath").getText());
 		logs.info("Displayed Username is==" + isElementPresent("WelcmUser_xpath").getText());
+		data.setData("Login", 1, 3, isElementPresent("WelcmUser_xpath").getText());
 		getScreenshot("LogOutDiv_", "Login", driver);
 
 	}

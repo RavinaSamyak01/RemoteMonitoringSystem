@@ -1,11 +1,47 @@
-02/02/2022 14:29:27 devpinoyLogger initialization of the log is done
-02/02/2022 14:29:27 devpinoyLogger initialization of the properties file
-02/02/2022 14:29:27 devpinoyLogger initialization of the properties file is done
-02/02/2022 14:29:27 devpinoyLogger Launching the browser
-02/02/2022 14:29:30 devpinoyLogger Chrome Browser is launched
-02/02/2022 14:29:30 devpinoyLogger Browser maximized
-02/02/2022 14:29:30 devpinoyLogger timeout is defined
-02/02/2022 14:29:30 devpinoyLogger Cookies are deleted
-02/02/2022 14:29:30 devpinoyLogger ExcelFileReader Object created
-02/02/2022 14:29:55 devpinoyLogger Login done
-02/02/2022 14:30:00 devpinoyLogger Printing screen shot taken for className HomePage2022020214301643792400989
+08/02/2022 17:36:00 devpinoyLogger initialization of the log is done
+08/02/2022 17:36:00 devpinoyLogger initialization of the properties file
+08/02/2022 17:36:00 devpinoyLogger initialization of the properties file is done
+08/02/2022 17:36:00 devpinoyLogger Launching the browser
+08/02/2022 17:36:02 devpinoyLogger Chrome Browser is launched
+08/02/2022 17:36:02 devpinoyLogger Browser maximized
+08/02/2022 17:36:02 devpinoyLogger timeout is defined
+08/02/2022 17:36:02 devpinoyLogger Cookies are deleted
+08/02/2022 17:36:03 devpinoyLogger ExcelFileReader Object created
+08/02/2022 17:36:13 devpinoyLogger Login done
+08/02/2022 17:36:19 devpinoyLogger Printing screen shot taken for className HomePage2022020817361644321979146
+08/02/2022 17:36:20 devpinoyLogger Mouse hover on LogoutDiv
+08/02/2022 17:36:20 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022020817361644321980568
+08/02/2022 17:36:20 devpinoyLogger Displayed Username is==RP
+08/02/2022 17:36:21 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022020817361644321981101
+08/02/2022 17:36:21 devpinoyLogger Displayed Username is==Ravina Prajapati
+08/02/2022 17:36:21 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022020817361644321981368
+08/02/2022 17:36:21 devpinoyLogger -----Testing CompanyMaster-------
+08/02/2022 17:36:27 devpinoyLogger Clicked on Admin menu
+08/02/2022 17:36:29 devpinoyLogger Clicked on Company Master
+08/02/2022 17:36:29 devpinoyLogger Printing screen shot taken for className CompanyMasterScreen_2022020817361644321989431
+08/02/2022 17:36:29 devpinoyLogger No of Columns in the table are=4
+08/02/2022 17:36:29 devpinoyLogger Write Column name in the Excel
+08/02/2022 17:36:29 devpinoyLogger Name of the Column is=Company Logo
+08/02/2022 17:36:29 devpinoyLogger Write Column name in the Excel
+08/02/2022 17:36:29 devpinoyLogger Name of the Column is=Total Site
+08/02/2022 17:36:30 devpinoyLogger Write Column name in the Excel
+08/02/2022 17:36:30 devpinoyLogger Name of the Column is=Total Panel
+08/02/2022 17:36:30 devpinoyLogger Write Column name in the Excel
+08/02/2022 17:36:30 devpinoyLogger Name of the Column is=Total Meter
+08/02/2022 17:36:30 devpinoyLogger No of Columns in the table are=4
+08/02/2022 17:36:30 devpinoyLogger Value of the Column is=
+08/02/2022 17:36:30 devpinoyLogger Value of the Column is=1
+08/02/2022 17:36:30 devpinoyLogger Value of the Column is=2
+08/02/2022 17:36:30 devpinoyLogger Value of the Column is=7
+08/02/2022 17:36:31 devpinoyLogger Clicked on Add Site button
+08/02/2022 17:36:31 devpinoyLogger Printing screen shot taken for className CMAddSite_2022020817361644321991978
+08/02/2022 17:36:32 devpinoyLogger Number of sites are==2
+08/02/2022 17:36:33 devpinoyLogger Entered SiteName
+08/02/2022 17:36:33 devpinoyLogger Number of Add Icons for sites are==2
+08/02/2022 17:36:34 devpinoyLogger Clicked on Add Panel
+08/02/2022 17:36:34 devpinoyLogger Printing screen shot taken for className CMAddPanel_2022020817361644321994626
+08/02/2022 17:36:34 devpinoyLogger Number of Panels are==3
+08/02/2022 17:36:35 devpinoyLogger Entered Panel Name
+08/02/2022 17:36:45 devpinoyLogger Number of Add Icons for Panels are==0
+08/02/2022 17:36:47 devpinoyLogger Mouse hover on LogoutDiv
+08/02/2022 17:36:47 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022020817361644322007548
