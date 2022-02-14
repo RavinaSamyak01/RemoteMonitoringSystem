@@ -1,6 +1,5 @@
 package rms_Admin;
 
-
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -81,55 +80,58 @@ public class CompanyMaster extends BaseInit {
 
 		// ----Dynamically handle the new add site
 
-		/*
-		 * // --Upload image String imagePath = System.getProperty("user.dir") +
-		 * "\\src\\main\\resources\\rms_TestData\\QA_Logo.jpg"; WebElement upload =
-		 * isElementPresent("UploadImg_id"); highLight(upload, driver); upload.click();
-		 * System.out.println("Clicked on Upload button");
-		 * logs.info("Clicked on Upload button");
-		 * wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(
-		 * "//*[@class=\"Uploadsection\"]")));
-		 * 
-		 * //--select file WebElement SelectFile = isElementPresent("SelectFile_xpath");
-		 * highLight(SelectFile, driver); SelectFile.sendKeys(imagePath);
-		 * System.out.println("Send Image path"); logs.info("Send Image path");
-		 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-		 * "//*[@class=\"Uploadsection\"]//button")));
-		 * wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-		 * "//*[@class=\"Uploadsection\"]//button")));
-		 * 
-		 * // ----Upload dialogue Details WebElement UploadDiv =
-		 * isElementPresent("UploadDiv_xpath"); rows =
-		 * UploadDiv.findElements(By.tagName("th"));
-		 * System.out.println("No of Columns in the table are=" + rows.size());
-		 * logs.info("No of Columns in the table are=" + rows.size()); for (int row = 0;
-		 * row < rows.size(); row++) { data.setData("CompanyMasterData", row + 1, 12,
-		 * rows.get(row).getText());
-		 * System.out.println("Write Column name in the Excel");
-		 * logs.info("Write Column name in the Excel");
-		 * System.out.println("Name of the Column is=" + rows.get(row).getText());
-		 * logs.info("Name of the Column is=" + rows.get(row).getText()); } Cols =
-		 * UploadDiv.findElements(By.tagName("td"));
-		 * System.out.println("No of values of Columns in the table are=" +
-		 * Cols.size()); logs.info("No of Columns in the table are=" + Cols.size()); for
-		 * (int col = 0; col < Cols.size(); col++) { data.setData("CompanyMasterData",
-		 * col+1, 13, Cols.get(col).getText());
-		 * System.out.println("Value of the Column is=" + Cols.get(col).getText());
-		 * logs.info("Value of the Column is=" + Cols.get(col).getText()); } //--Clicked
-		 * on Upload button WebElement UploadBTN=isElementPresent("UploadBTN_xpath");
-		 * UploadBTN.click(); System.out.println("Clicked on Upload button");
-		 * logs.info("Clicked on Upload button");
-		 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.
-		 * xpath("//div[contains(@class, 'sucessmsg')]"))); String ActualUploadMsg =
-		 * isElementPresent("RegSuccessMsg_xpath").getText(); String
-		 * ExpectedUploadMsg="Upload successfully"; Assert.assertEquals(ActualUploadMsg,
-		 * ExpectedUploadMsg);
-		 * 
-		 * //--Close button isElementPresent("Close_xpath").click();
-		 * System.out.println("Clicked on Close button");
-		 * logs.info("Clicked on Close button");
-		 */
-		
+		// --Upload image
+		String imagePath = System.getProperty("user.dir") + "\\src\\main\\resources\\rms_TestData\\QA_Logo.jpg";
+		WebElement upload = isElementPresent("UploadImg_id");
+		highLight(upload, driver);
+		upload.click();
+		System.out.println("Clicked on Upload button");
+		logs.info("Clicked on Upload button");
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@class=\"Uploadsection\"]")));
+
+		// --select file
+		WebElement SelectFile = isElementPresent("SelectFile_xpath");
+		highLight(SelectFile, driver);
+		SelectFile.sendKeys(imagePath);
+		System.out.println("Send Image path");
+		logs.info("Send Image path");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class=\"Uploadsection\"]//button")));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class=\"Uploadsection\"]//button")));
+
+		// ----Upload dialogue Details
+		WebElement UploadDiv = isElementPresent("UploadDiv_xpath");
+		rows = UploadDiv.findElements(By.tagName("th"));
+		System.out.println("No of Columns in the table are=" + rows.size());
+		logs.info("No of Columns in the table are=" + rows.size());
+		for (int row = 0; row < rows.size(); row++) {
+			data.setData("CompanyMasterData", row + 1, 12, rows.get(row).getText());
+			System.out.println("Write Column name in the Excel");
+			logs.info("Write Column name in the Excel");
+			System.out.println("Name of the Column is=" + rows.get(row).getText());
+			logs.info("Name of the Column is=" + rows.get(row).getText());
+		}
+		Cols = UploadDiv.findElements(By.tagName("td"));
+		System.out.println("No of values of Columns in the table are=" + Cols.size());
+		logs.info("No of Columns in the table are=" + Cols.size());
+		for (int col = 0; col < Cols.size(); col++) {
+			data.setData("CompanyMasterData", col + 1, 13, Cols.get(col).getText());
+			System.out.println("Value of the Column is=" + Cols.get(col).getText());
+			logs.info("Value of the Column is=" + Cols.get(col).getText());
+		}
+		// --Clicked on Upload button
+		WebElement UploadBTN = isElementPresent("UploadBTN_xpath");
+		UploadBTN.click();
+		System.out.println("Clicked on Upload button");
+		logs.info("Clicked on Upload button");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class, 'sucessmsg')]")));
+		String ActualUploadMsg = isElementPresent("RegSuccessMsg_xpath").getText();
+		String ExpectedUploadMsg = "Upload successfully";
+		Assert.assertEquals(ActualUploadMsg, ExpectedUploadMsg);
+
+		// --Close button
+		isElementPresent("Close_xpath").click();
+		System.out.println("Clicked on Close button");
+		logs.info("Clicked on Close button");
 
 		// ----Add Site
 		highLight(isElementPresent("AddSite_id"), driver);
@@ -194,9 +196,10 @@ public class CompanyMaster extends BaseInit {
 					logs.info("Entered Panel Name");
 
 					// --Add Device
-					List<WebElement> AddDevice = driver.findElements(By.xpath("//*[@id=\"add-ic-ancher\"]"));
-					System.out.println("Number of Add Icons for Panels are==" + AddDevice.size());
-					logs.info("Number of Add Icons for Panels are==" + AddDevice.size());
+					List<WebElement> AddDevice = driver
+							.findElements(By.xpath("//a[contains(@id,'btnadminaddsiteAdd')]"));
+					System.out.println("Number of Add Icons for are==" + AddDevice.size());
+					logs.info("Number of Add Icons  are==" + AddDevice.size());
 
 					// ---get the last Add Icon of the Panel
 					for (int Device = AddDevice.size() - 1; Device < AddDevice.size();) {

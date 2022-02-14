@@ -1,47 +1,155 @@
-08/02/2022 17:36:00 devpinoyLogger initialization of the log is done
-08/02/2022 17:36:00 devpinoyLogger initialization of the properties file
-08/02/2022 17:36:00 devpinoyLogger initialization of the properties file is done
-08/02/2022 17:36:00 devpinoyLogger Launching the browser
-08/02/2022 17:36:02 devpinoyLogger Chrome Browser is launched
-08/02/2022 17:36:02 devpinoyLogger Browser maximized
-08/02/2022 17:36:02 devpinoyLogger timeout is defined
-08/02/2022 17:36:02 devpinoyLogger Cookies are deleted
-08/02/2022 17:36:03 devpinoyLogger ExcelFileReader Object created
-08/02/2022 17:36:13 devpinoyLogger Login done
-08/02/2022 17:36:19 devpinoyLogger Printing screen shot taken for className HomePage2022020817361644321979146
-08/02/2022 17:36:20 devpinoyLogger Mouse hover on LogoutDiv
-08/02/2022 17:36:20 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022020817361644321980568
-08/02/2022 17:36:20 devpinoyLogger Displayed Username is==RP
-08/02/2022 17:36:21 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022020817361644321981101
-08/02/2022 17:36:21 devpinoyLogger Displayed Username is==Ravina Prajapati
-08/02/2022 17:36:21 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022020817361644321981368
-08/02/2022 17:36:21 devpinoyLogger -----Testing CompanyMaster-------
-08/02/2022 17:36:27 devpinoyLogger Clicked on Admin menu
-08/02/2022 17:36:29 devpinoyLogger Clicked on Company Master
-08/02/2022 17:36:29 devpinoyLogger Printing screen shot taken for className CompanyMasterScreen_2022020817361644321989431
-08/02/2022 17:36:29 devpinoyLogger No of Columns in the table are=4
-08/02/2022 17:36:29 devpinoyLogger Write Column name in the Excel
-08/02/2022 17:36:29 devpinoyLogger Name of the Column is=Company Logo
-08/02/2022 17:36:29 devpinoyLogger Write Column name in the Excel
-08/02/2022 17:36:29 devpinoyLogger Name of the Column is=Total Site
-08/02/2022 17:36:30 devpinoyLogger Write Column name in the Excel
-08/02/2022 17:36:30 devpinoyLogger Name of the Column is=Total Panel
-08/02/2022 17:36:30 devpinoyLogger Write Column name in the Excel
-08/02/2022 17:36:30 devpinoyLogger Name of the Column is=Total Meter
-08/02/2022 17:36:30 devpinoyLogger No of Columns in the table are=4
-08/02/2022 17:36:30 devpinoyLogger Value of the Column is=
-08/02/2022 17:36:30 devpinoyLogger Value of the Column is=1
-08/02/2022 17:36:30 devpinoyLogger Value of the Column is=2
-08/02/2022 17:36:30 devpinoyLogger Value of the Column is=7
-08/02/2022 17:36:31 devpinoyLogger Clicked on Add Site button
-08/02/2022 17:36:31 devpinoyLogger Printing screen shot taken for className CMAddSite_2022020817361644321991978
-08/02/2022 17:36:32 devpinoyLogger Number of sites are==2
-08/02/2022 17:36:33 devpinoyLogger Entered SiteName
-08/02/2022 17:36:33 devpinoyLogger Number of Add Icons for sites are==2
-08/02/2022 17:36:34 devpinoyLogger Clicked on Add Panel
-08/02/2022 17:36:34 devpinoyLogger Printing screen shot taken for className CMAddPanel_2022020817361644321994626
-08/02/2022 17:36:34 devpinoyLogger Number of Panels are==3
-08/02/2022 17:36:35 devpinoyLogger Entered Panel Name
-08/02/2022 17:36:45 devpinoyLogger Number of Add Icons for Panels are==0
-08/02/2022 17:36:47 devpinoyLogger Mouse hover on LogoutDiv
-08/02/2022 17:36:47 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022020817361644322007548
+10/02/2022 16:19:45 devpinoyLogger initialization of the log is done
+10/02/2022 16:19:45 devpinoyLogger initialization of the properties file
+10/02/2022 16:19:45 devpinoyLogger initialization of the properties file is done
+10/02/2022 16:19:45 devpinoyLogger Launching the browser
+10/02/2022 16:19:46 devpinoyLogger Chrome Browser is launched
+10/02/2022 16:19:46 devpinoyLogger Browser maximized
+10/02/2022 16:19:46 devpinoyLogger timeout is defined
+10/02/2022 16:19:46 devpinoyLogger Cookies are deleted
+10/02/2022 16:19:47 devpinoyLogger ExcelFileReader Object created
+10/02/2022 16:19:58 devpinoyLogger Login done
+10/02/2022 16:20:03 devpinoyLogger Printing screen shot taken for className HomePage2022021016201644490203361
+10/02/2022 16:20:04 devpinoyLogger Mouse hover on LogoutDiv
+10/02/2022 16:20:04 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022021016201644490204758
+10/02/2022 16:20:04 devpinoyLogger Displayed Username is==RP
+10/02/2022 16:20:05 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022021016201644490205289
+10/02/2022 16:20:05 devpinoyLogger Displayed Username is==Ravina Prajapati
+10/02/2022 16:20:05 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022021016201644490205592
+10/02/2022 16:20:05 devpinoyLogger -----Testing CompanyMaster-------
+10/02/2022 16:20:12 devpinoyLogger Clicked on Admin menu
+10/02/2022 16:20:13 devpinoyLogger Clicked on Company Master
+10/02/2022 16:20:13 devpinoyLogger Printing screen shot taken for className CompanyMasterScreen_2022021016201644490213689
+10/02/2022 16:20:13 devpinoyLogger No of Columns in the table are=4
+10/02/2022 16:20:13 devpinoyLogger Write Column name in the Excel
+10/02/2022 16:20:14 devpinoyLogger Name of the Column is=Company Logo
+10/02/2022 16:20:14 devpinoyLogger Write Column name in the Excel
+10/02/2022 16:20:14 devpinoyLogger Name of the Column is=Total Site
+10/02/2022 16:20:14 devpinoyLogger Write Column name in the Excel
+10/02/2022 16:20:14 devpinoyLogger Name of the Column is=Total Panel
+10/02/2022 16:20:14 devpinoyLogger Write Column name in the Excel
+10/02/2022 16:20:14 devpinoyLogger Name of the Column is=Total Meter
+10/02/2022 16:20:14 devpinoyLogger No of Columns in the table are=4
+10/02/2022 16:20:14 devpinoyLogger Value of the Column is=
+10/02/2022 16:20:14 devpinoyLogger Value of the Column is=1
+10/02/2022 16:20:14 devpinoyLogger Value of the Column is=2
+10/02/2022 16:20:14 devpinoyLogger Value of the Column is=6
+10/02/2022 16:20:15 devpinoyLogger Clicked on Upload button
+10/02/2022 16:20:17 devpinoyLogger Send Image path
+10/02/2022 16:20:17 devpinoyLogger No of Columns in the table are=3
+10/02/2022 16:20:17 devpinoyLogger Write Column name in the Excel
+10/02/2022 16:20:17 devpinoyLogger Name of the Column is=File Name
+10/02/2022 16:20:17 devpinoyLogger Write Column name in the Excel
+10/02/2022 16:20:17 devpinoyLogger Name of the Column is=Size
+10/02/2022 16:20:17 devpinoyLogger Write Column name in the Excel
+10/02/2022 16:20:17 devpinoyLogger Name of the Column is=Progress
+10/02/2022 16:20:17 devpinoyLogger No of Columns in the table are=3
+10/02/2022 16:20:17 devpinoyLogger Value of the Column is=QA_Logo.jpg
+10/02/2022 16:20:17 devpinoyLogger Value of the Column is=18.3 kB
+10/02/2022 16:20:17 devpinoyLogger Value of the Column is=% Complete
+Upload
+10/02/2022 16:20:17 devpinoyLogger Clicked on Upload button
+10/02/2022 16:20:18 devpinoyLogger Clicked on Close button
+10/02/2022 16:20:19 devpinoyLogger Clicked on Add Site button
+10/02/2022 16:20:19 devpinoyLogger Printing screen shot taken for className CMAddSite_2022021016201644490219810
+10/02/2022 16:20:19 devpinoyLogger Number of sites are==2
+10/02/2022 16:20:21 devpinoyLogger Entered SiteName
+10/02/2022 16:20:21 devpinoyLogger Number of Add Icons for sites are==2
+10/02/2022 16:20:22 devpinoyLogger Clicked on Add Panel
+10/02/2022 16:20:22 devpinoyLogger Printing screen shot taken for className CMAddPanel_2022021016201644490222457
+10/02/2022 16:20:22 devpinoyLogger Number of Panels are==3
+10/02/2022 16:20:23 devpinoyLogger Entered Panel Name
+10/02/2022 16:20:23 devpinoyLogger Number of Add Icons  are==22
+10/02/2022 16:20:24 devpinoyLogger Clicked on Add Device
+10/02/2022 16:20:25 devpinoyLogger Printing screen shot taken for className CMAddDevice_2022021016201644490225023
+10/02/2022 16:20:25 devpinoyLogger Number of Devices are==20
+10/02/2022 16:20:26 devpinoyLogger Entered Device Name
+10/02/2022 16:20:26 devpinoyLogger Number of Config buttons are==26
+10/02/2022 16:20:27 devpinoyLogger Clicked on Configuration button for device
+10/02/2022 16:20:27 devpinoyLogger Printing screen shot taken for className CMDeviceConfiguration_2022021016201644490227784
+10/02/2022 16:20:28 devpinoyLogger Header Of the tab is==GSM Device Parameters
+10/02/2022 16:20:30 devpinoyLogger Clicked on Save button
+10/02/2022 16:20:30 devpinoyLogger Number of Error Messages are==12
+10/02/2022 16:20:30 devpinoyLogger Error Message is==Select Device Type.
+10/02/2022 16:20:30 devpinoyLogger Error Message is==Select Maximum Slave.
+10/02/2022 16:20:30 devpinoyLogger Error Message is==Select Baudrate.
+10/02/2022 16:20:30 devpinoyLogger Error Message is==Select Parity.
+10/02/2022 16:20:30 devpinoyLogger Error Message is==Interval Timer Required
+10/02/2022 16:20:30 devpinoyLogger Error Message is==Select APN
+10/02/2022 16:20:30 devpinoyLogger Error Message is==URL Is Required
+10/02/2022 16:20:30 devpinoyLogger Error Message is==Port Is Required
+10/02/2022 16:20:30 devpinoyLogger Error Message is==Key Id Is Required
+10/02/2022 16:20:30 devpinoyLogger Error Message is==Username Is Required
+10/02/2022 16:20:30 devpinoyLogger Error Message is==Password Is Required
+10/02/2022 16:20:30 devpinoyLogger Error Message is==CSVFileName Is Required
+10/02/2022 16:20:32 devpinoyLogger Clicked on Cancel button
+10/02/2022 16:20:33 devpinoyLogger Clicked on Configuration button for device
+10/02/2022 16:20:33 devpinoyLogger Printing screen shot taken for className CMDeviceConfiguration_2022021016201644490233423
+10/02/2022 16:20:34 devpinoyLogger Printing screen shot taken for className DeviceTypeDrop_2022021016201644490234794
+10/02/2022 16:20:34 devpinoyLogger Selected Device Type
+10/02/2022 16:20:36 devpinoyLogger Entered Maximum Slave=1000
+10/02/2022 16:20:36 devpinoyLogger Error Message is=Slave Should Be Greater Than 0 And Less Than 16
+10/02/2022 16:20:36 devpinoyLogger Entered Maximum Slave=5
+10/02/2022 16:20:37 devpinoyLogger Printing screen shot taken for className BaudrateDrop_2022021016201644490237530
+10/02/2022 16:20:37 devpinoyLogger Selected Baudrate
+10/02/2022 16:20:38 devpinoyLogger Printing screen shot taken for className ParityDrop_2022021016201644490238901
+10/02/2022 16:20:38 devpinoyLogger Selected Parity
+10/02/2022 16:20:40 devpinoyLogger Entered Interval Timer=5
+10/02/2022 16:20:40 devpinoyLogger Printing screen shot taken for className GSMDConfigPart1_2022021016201644490240281
+10/02/2022 16:20:40 devpinoyLogger Error Message is=Interval Time Should Be Greater Than 30 And Less Than 65535
+10/02/2022 16:20:40 devpinoyLogger Entered Interval Timer=31
+10/02/2022 16:20:40 devpinoyLogger Scroll down to MQTT
+10/02/2022 16:20:41 devpinoyLogger Printing screen shot taken for className APNDrop_2022021016201644490241765
+10/02/2022 16:20:41 devpinoyLogger Selected APN
+10/02/2022 16:20:43 devpinoyLogger Entered HTTP URL
+10/02/2022 16:20:44 devpinoyLogger Entered HTTP Port
+10/02/2022 16:20:45 devpinoyLogger Entered MQTT KeyID
+10/02/2022 16:20:45 devpinoyLogger Printing screen shot taken for className GSMDConfigPart2_2022021016201644490245574
+10/02/2022 16:20:46 devpinoyLogger Label Of the FTP Section is==FTP Parameters
+10/02/2022 16:20:46 devpinoyLogger Scroll down to end
+10/02/2022 16:20:47 devpinoyLogger Entered FTP UserName
+10/02/2022 16:20:49 devpinoyLogger Entered FTP Password
+10/02/2022 16:20:50 devpinoyLogger Entered FTP FileName
+10/02/2022 16:20:50 devpinoyLogger Printing screen shot taken for className GSMDConfigPart3_2022021016201644490250476
+10/02/2022 16:20:51 devpinoyLogger Clicked on Save button
+10/02/2022 16:20:52 devpinoyLogger Clicked on Configuration button for device
+10/02/2022 16:20:53 devpinoyLogger Printing screen shot taken for className CMDeviceConfiguration_2022021016201644490253013
+10/02/2022 16:20:54 devpinoyLogger Clicked on RTC Tab
+10/02/2022 16:20:54 devpinoyLogger Printing screen shot taken for className ConfigRTCTab_2022021016201644490254345
+10/02/2022 16:20:57 devpinoyLogger Clicked on Save button
+10/02/2022 16:20:57 devpinoyLogger Number of Error Messages are==2
+10/02/2022 16:20:57 devpinoyLogger Error Message is==TimeZone Is Required.
+10/02/2022 16:20:57 devpinoyLogger Error Message is==DateTime Is Required.
+10/02/2022 16:20:58 devpinoyLogger Entered TimeZone
+10/02/2022 16:21:00 devpinoyLogger Selected Date,10 days priorior from current Date
+10/02/2022 16:21:01 devpinoyLogger Clicked on Get button
+10/02/2022 16:21:01 devpinoyLogger Printing screen shot taken for className ConfigRTCTabwithData_2022021016211644490261395
+10/02/2022 16:21:02 devpinoyLogger Clicked on Save button
+10/02/2022 16:21:03 devpinoyLogger Clicked on Configuration button for device
+10/02/2022 16:21:03 devpinoyLogger Printing screen shot taken for className CMDeviceConfiguration_2022021016211644490263921
+10/02/2022 16:21:05 devpinoyLogger Clicked on Settings Tab
+10/02/2022 16:21:05 devpinoyLogger Printing screen shot taken for className ConfigSettingsTab_2022021016211644490265240
+10/02/2022 16:21:08 devpinoyLogger Clicked on Save button
+10/02/2022 16:21:08 devpinoyLogger Number of Error Messages are==6
+10/02/2022 16:21:08 devpinoyLogger Error Message is==Select Protocol.
+10/02/2022 16:21:08 devpinoyLogger Error Message is==Clientname Is Required.
+10/02/2022 16:21:08 devpinoyLogger Error Message is==Port Is Required.
+10/02/2022 16:21:08 devpinoyLogger Error Message is==Username Is Required.
+10/02/2022 16:21:08 devpinoyLogger Error Message is==Password Is Required.
+10/02/2022 16:21:08 devpinoyLogger Error Message is==
+10/02/2022 16:21:10 devpinoyLogger Printing screen shot taken for className ProtocolDrop_2022021016211644490270206
+10/02/2022 16:21:10 devpinoyLogger Selected Protocol
+10/02/2022 16:21:11 devpinoyLogger Entered Client Name
+10/02/2022 16:21:12 devpinoyLogger Entered MQTT Port
+10/02/2022 16:21:13 devpinoyLogger Entered UserName
+10/02/2022 16:21:15 devpinoyLogger Entered Password
+10/02/2022 16:21:15 devpinoyLogger Printing screen shot taken for className SettingsTabwithData_2022021016211644490275169
+10/02/2022 16:21:16 devpinoyLogger Clicked on Save button
+10/02/2022 16:21:16 devpinoyLogger Number of Add Icons for Device are==20
+10/02/2022 16:21:17 devpinoyLogger Clicked on Add Meter
+10/02/2022 16:21:17 devpinoyLogger Printing screen shot taken for className CMAddMeter_2022021016211644490277643
+10/02/2022 16:21:17 devpinoyLogger Number of EnergyMeters Rows are==7
+10/02/2022 16:21:30 devpinoyLogger Mouse hover on LogoutDiv
+10/02/2022 16:21:30 devpinoyLogger Printing screen shot taken for className LogOutDiv_2022021016211644490290527
+10/02/2022 16:21:31 devpinoyLogger Clicked on LogOut button
+10/02/2022 16:21:33 devpinoyLogger Printing screen shot taken for className LoginPageAfterLogOut_2022021016211644490293844
+10/02/2022 16:21:38 devpinoyLogger Browser closed
